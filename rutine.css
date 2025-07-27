@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+:root {
+    --blanco : #FFFF;
+    --bordes : #FFFFFF1A;
+    --negro : #000;
+}
+
+body {
+    margin: 10px;
+    background-color: aliceblue;
+    background-image: url(imglanding/images.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
+    background-color: rgba(0, 0, 0, 0.901);
+    background-blend-mode: darken;
+}
+
+h1 {
+    font-size: 60px;
+    /* letter-spacing: 1px; */
+    color: white;
+    /* margin: 5px; */
+}
+
+h1::first-letter {
+    font-size: 2cm;
+    letter-spacing: -5px;
+}
+
+.header__barranav {
+    height: 1.1cm;
+    background-color: white;
+    display: flex;   
+    justify-content: space-between;
+}
+
+.header__barranav a {
+    font-size: 20px;
+    text-decoration: none;
+    color: var(--negro);
+    border-radius: 10px;
+    margin: 3px 3px;
+}
+
+.header__barranav--left a {
+    padding: 4px;
+    display: inline-block;  
+    margin-right: 20px;
+    transition: transform 0.6s ease;
+}
+
+.header__barranav--left a:hover {
+    background-color: var(--negro);
+    color: var(--blanco);
+    transform: scale(1.1);
+}
+
+.header__barranav--right {
+    color: var(--negro);
+    margin-right: 10px;
+}
+
+.header__barranav--right a {
+    display: inline-block;
+    color: white;
+    background-color: var(--negro);
+    padding: 4px;
+    transition: transform 0.6s ease;
+}
+
+.header__barranav--right a:hover {
+    background-color: var(--blanco);
+    color: var(--negro);
+    transform: scale(1.1);
+    border: 1px solid var(--negro);
+}
+
+main {
+    margin-top: 10px;
+}
+
+.nosotros {
+    margin: 0 auto;
+    border: 2px solid var(--bordes) ;
+    height: auto;
+    width: 15cm;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0px 0px 15px 5px var(--bordes);
+}
+
+.nosotros__subtitles {
+    color: white;
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 25px;
+}
+
+.nosotros__img {
+    width: 310px;
+    height: 320px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 20px white;
+    display: block;
+    margin: auto;
+}
+
+.nosotros__description {
+    color: white;
+    margin-top: 15px;
+}   
