@@ -25,9 +25,8 @@ body {
 
 h1 {
     font-size: 60px;
-    /* letter-spacing: 1px; */
+    letter-spacing: -5px;
     color: white;
-    /* margin: 5px; */
 }
 
 h1::first-letter {
@@ -54,7 +53,7 @@ h1::first-letter {
     padding: 4px;
     display: inline-block;  
     margin-right: 20px;
-    transition: transform 0.6s ease;
+    transition: transform 0.6s ease;    
 }
 
 .header__barranav--left a:hover {
@@ -91,7 +90,7 @@ main {
     margin: 0 auto;
     border: 2px solid var(--bordes) ;
     height: auto;
-    width: 15cm;
+    width: 60%;
     border-radius: 10px;
     text-align: center;
     padding: 10px;
@@ -109,7 +108,7 @@ main {
     width: 310px;
     height: 320px;
     border-radius: 50%;
-    box-shadow: 0px 0px 20px white;
+    box-shadow: 0px 0px 20px var(--blanco);
     display: block;
     margin: auto;
 }
@@ -118,3 +117,109 @@ main {
     color: white;
     margin-top: 15px;
 }   
+
+.containerform {
+    margin: 1cm auto 2cm auto;
+    background-color: transparent;
+    width: 35%;
+    height: auto;
+}
+
+fieldset {
+    color: var(--blanco);
+    height: auto;
+    padding: 10px;
+    border: 1px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 10px var(--bordes);
+    position: relative;
+}
+
+legend {
+    padding: 0px 6px;
+    font-size: 30px;
+    letter-spacing: 3px;
+}   
+
+.containerform__items {
+    position: relative;
+    left: 20%;
+    margin-bottom: 10px;
+}
+
+label {
+    color: var(--blanco);
+    display: block;
+    font-size: 20px;
+    margin-top: 5px;
+    position: relative;
+}
+
+input {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 60%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid var(--blanco);
+    color: var(--blanco);
+    font-size: 15px;
+    padding: 0px 0px 4px 10px;
+}
+
+input:focus {
+    outline: none;
+    border: none;
+    border-bottom: 3px solid var(--blanco);
+}
+
+.containerform__button {
+    height: 50px;
+    width: 80px;
+    color: var(--blanco);
+    background-color: transparent;
+    padding: 10px;
+    border-radius: 50px;
+    font-size: 15px;
+    display: block;
+    margin: 20px auto 0px auto;
+    cursor: pointer;
+    transition: transform 0.5s ease;
+}
+
+.containerform__button:hover {
+    transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+    h1{
+        font-size: 50px;
+        letter-spacing: -3px;
+    } 
+
+    h1::first-letter {
+        font-size: 1.5cm;
+    }
+
+    .header__barranav {
+        height: 0.8cm;
+    }
+
+    .header__barranav a {
+        font-size: 15px;
+        font-weight: 900;
+        margin: 2px 0px;
+    }
+
+    .header__barranav--left a {
+        margin-right: 10px;
+    }
+
+    .header__barranav--right {
+        margin-right: 4px;
+    }
+
+    .header__barranav--right a {
+        border-radius: 8px;
+    }
+
+}
