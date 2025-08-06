@@ -83,16 +83,15 @@ h1::first-letter {
 }
 
 main {
-    margin-top: 10px;
+    margin: 1cm 0 1cm;
 }
 
 .nosotros {
-    margin: 0 auto;
     border: 2px solid var(--bordes) ;
     height: auto;
     width: 60%;
     border-radius: 10px;
-    text-align: center;
+    margin: 1cm auto 2cm; 
     padding: 10px;
     box-shadow: 0px 0px 15px 5px var(--bordes);
 }
@@ -116,48 +115,68 @@ main {
 .nosotros__description {
     color: white;
     margin-top: 15px;
-}   
+}
 
-.containerform {
-    margin: 1cm auto 2cm auto;
-    background-color: transparent;
-    width: 35%;
+.containerforms {
+    width: 40%;
     height: auto;
+    margin: 0 auto ;
+}
+
+
+.container__login {
+    margin: 0px 0px 0px 1cm;
+    background-color: transparent;
+    width: 100%;
+    height: 90%;
+}
+
+.container--register {
+    padding-top: 1cm;
+}
+
+.container__login,
+.container--register {
+    display: block;
+    margin: 0 auto;
 }
 
 fieldset {
     color: var(--blanco);
     height: auto;
-    padding: 10px;
-    border: 1px;
+    padding: 0px 10px;
+    border: none;
     border-radius: 10px;
     box-shadow: 0px 0px 10px 10px var(--bordes);
     position: relative;
 }
 
 legend {
+    text-align: center;
     padding: 0px 6px;
     font-size: 30px;
     letter-spacing: 3px;
 }   
 
-.containerform__items {
+.container__items {
     position: relative;
-    left: 20%;
+    width: 70%;
+    margin: 0 auto;
     margin-bottom: 10px;
 }
+
 
 label {
     color: var(--blanco);
     display: block;
     font-size: 20px;
-    margin-top: 5px;
+    margin-top: 10px;
     position: relative;
 }
 
 input {
     font-family: Arial, Helvetica, sans-serif;
-    width: 60%;
+    width: 100%;
     background-color: transparent;
     border: none;
     border-bottom: 1px solid var(--blanco);
@@ -172,22 +191,83 @@ input:focus {
     border-bottom: 3px solid var(--blanco);
 }
 
-.containerform__button {
+.container__button {
     height: 50px;
-    width: 80px;
+    width: auto;
     color: var(--blanco);
     background-color: transparent;
     padding: 10px;
     border-radius: 50px;
     font-size: 15px;
     display: block;
-    margin: 20px auto 0px auto;
+    margin: 20px auto 10px auto;
     cursor: pointer;
     transition: transform 0.5s ease;
 }
 
-.containerform__button:hover {
-    transform: scale(1.1);
+.container__button:hover {
+    transform: scale(1.1    );
+}
+
+.container__otrasopciones {
+    text-align: center;
+}
+
+.container__redes {
+    padding: 10px;
+    text-align: center;
+}
+
+.container__redes button {
+    border-radius: 50%;
+    padding: 5px;
+    margin: 0px 6px;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+}
+
+.container__redes button:hover {
+    background-color: transparent;
+}
+
+.social-icon {
+    color: var(--negro);
+    background-color: transparent;
+    font-size: 40px;
+    transition: background-color 0.4s linear;
+}
+
+.social-icon:hover {
+    color: var(--blanco);
+}
+
+.tyc {
+    margin-top: 0.5cm;
+    width: auto;
+    padding: 0 10px;
+    position: relative;
+    line-height: 1.2;
+    white-space: nowrap;
+}
+
+.tyc label {
+    font-size: 12px;
+    margin-left: 13%;
+}
+
+.tyc a {
+    color: cyan;
+    cursor: pointer;
+}
+
+.tyc input[type="checkbox"] {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 8px 0 0;
+    position: relative;
+    top: -1px; 
+    right: 40%;
+    color: cyan;
 }
 
 @media (max-width: 768px) {
