@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+html {
+    font-size: 25px;
+}
+
+:root { 
+    --fuenteTitulos: 'Bebas Neue', sans-serif;
+    --fuenteSubtitulo: 'Oswald', sans-serif;
+    --fuenteTexto: 'Montserrat', sans-serif;
+    --colorPrincipal: #FFFF;
+    --colorSecundario: #000;
+}
+
+body {
+    background-image: url(../imglanding/images.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
+    background-color: rgba(0, 0, 0, 0.901);
+    background-blend-mode: darken;
+    padding: 10px;
+    color: var(--colorPrincipal);
+}
+
+header {
+    height: 100vh;
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+    font-family: var(--fuenteTitulos);
+    font-size: 3rem;
+    color:var(--colorPrincipal);
+    letter-spacing: 3px;
+}
+
+.header__barranav {
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+}
+
+.header__barranav a {
+    font-family: var(--fuenteSubtitulo);
+    color: var(--colorPrincipal);
+    text-decoration: none;
+    border-radius: 15px;
+    font-weight: 400;
+    padding: 3px 6px;
+    transition: transform 0.3s ease;
+}
+
+.header__barranav a:hover {
+    transform: scale(1.1);
+}
+
+
+@media (max-width: 768px) {
+    h1{
+        font-size: 50px;
+        letter-spacing: -3px;
+    } 
+
+    h1::first-letter {
+        font-size: 1.5cm;
+    }
+
+    .header__barranav {
+        height: 0.8cm;
+    }
+
+    .header__barranav a {
+        font-size: 15px;
+        font-weight: 900;
+        margin: 2px 0px;
+    }
+
+    .header__barranav--left a {
+        margin-right: 10px;
+    }
+
+    .header__barranav--right {
+        margin-right: 4px;
+    }
+
+    .header__barranav--right a {
+        border-radius: 8px;
+    }
+
+}
