@@ -13,25 +13,30 @@
 </head>
 <body>
     <header>
-        <h1>Reboot!</h1>
-        <nav class="header__barranav">
-                <a href="#" target="_blank">Inicio</a>
-                <a href="#" target="_blank">Acerca De Nosotros</a>
-                <a href="#" target="_blank">Servicios</a>
-                <a href="#" target="_blank">Contactanos</a>
-        </nav>
-        <section class="nosotros">
-            <p class="nosotros__parrafo">
-                Esta es una página enfatizada en diseñar una rutina diaria según tus necesidades fisicas, mentales y demás, preservando siempre tu salud, totalemente ideal y eficaz para empezar a tener un nuevo estilo de vida, BIENVENIDO!
+        <div class="superior">
+            <h1>Reboot!</h1>
+            <nav class="header__barranav"
+                    <a href="#" target="_blank">Inicio</a>
+                    <a href="#" target="_blank">Acerca De Nosotros</a>
+                    <a href="#" target="_blank">Servicios</a>
+                    <a href="#" target="_blank">Contactanos</a>
+            </nav>
+        </div>
+        <div class="inferior">
+            <p class="inferior__parrafo">
+                En Reboot te ofrecemos una guia de ejecicios adaptados a tus necedidades desde la comodidad de tu casa, trabajando especialmente calistenia <br><br>¡BIENVENIDO!
             </p>
-            <button class="boton">Comenzar!</button>
-        </section>
+            <div class="botones">
+            <button class="boton">Iniciar sesión</button>
+            <button class="boton boton--registro">Registrarse</button>
+            </div>
+        </div>
     </header>
     <main>
-        <div class="containerforms">
-            <section class="container__login">
+        <section class="containerForm">
+            <div class="containerForm__login">
                 <fieldset>
-                    <legend>Inicia sesion</legend>
+                <legend>Inicia sesion</legend>
                 <form action="#" method="post">
                     <div class="container__items">
                     <label for="usuario">Usuario:</label>
@@ -41,10 +46,9 @@
                     </div>
                     <button type="reset" class="container__button">Ingresar</button>
                 </form>
-                <p class="container__otrasopciones">
-                    o inicia sesión con:
-                </p>
-                <div class="container__redes">
+                <p class="container__otrasopciones">o inicia sesión con:</p>
+                
+                <div class="redes">
                     <button type="submit">
                         <i class="fab fa-facebook social-icon"></i>
                     </button>
@@ -59,8 +63,10 @@
                     </button>
                 </div>
                 </fieldset>
-            </section>
-            <section class="container__login container--register">
+            </div>
+        </section>
+        <section class="containerForm">
+            <div class="containerForm__login containerForm__login--register">
                 <fieldset>
                     <legend>Registrate</legend>     
                     <form action="#" method="post">
@@ -84,8 +90,8 @@
                         <button type="reset" class="container__button">Registrarse</button>
                     </form>
                 </fieldset>
-            </section>
-        </div>
+            </div>
+        </section>
     </main>
     <footer>
     </footer>

@@ -26,13 +26,26 @@ body {
     background-attachment: fixed;
     background-color: rgba(0, 0, 0, 0.901);
     background-blend-mode: darken;
-    padding: 10px;
     color: var(--colorPrincipal);
 }
 
 header {
+    padding: 5% 0;
     height: 100vh;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.superior, .inferior {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+.superior {
+    height: 40%;
 }
 
 h1 {
@@ -65,27 +78,76 @@ h1 {
     transform: scale(1.1);
 }
 
-.nosotros {
-    font-size: 1.5rem;
-    font-family: var(--fuenteTexto);
+.inferior {
+    width: 60%;
+    height: 60%;
     display: flex;
-    flex-flow: column wrap;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    width: 70%;
-    height: 80%;
-    margin: auto;
+    font-family: var(--fuenteTexto);
+    gap: 15%;
+}
+
+.inferior__parrafo {
+    font-size: 1.5rem;
     text-align: center;
-    gap: 10%;
+}
+
+.botones {
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .boton {
-    padding: 10px 20px;
+    width: 40%;
+    padding: 10px 0;
     border-radius: 35px;
+    border: solid;
     font-size: 0.9rem;
     font-weight: bold;
     font-family: var(--fuenteBotones);
     cursor: pointer;
+}
+
+.boton--registro {
+    color: var(--colorPrincipal);
+    background-color: var(--colorSecundario);
+    border: solid var(--colorPrincipal);
+}
+
+main
+
+.containerForm {
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.containerForm__login {
+    /* display: none; */
+    width: 40%;
+    height: auto;
+}
+
+fieldset {
+    padding: 20px;
+    border-radius: 10px;
+    border: 3px solid;
+    display: flex;
+    flex-direction: column;
+}
+
+legend {
+    text-align: center;
+    padding: 0 5%;
+}
+
+.containerForm__login--register{
+    display: none;
 }
 
 @media (max-width: 768px) {
