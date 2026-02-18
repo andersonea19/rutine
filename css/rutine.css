@@ -1,22 +1,4 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-html {
-    font-size: 25px;
-}
-
-:root { 
-    --fuenteTitulos: 'Bebas Neue', sans-serif;
-    --fuenteSubtitulo: 'Oswald', sans-serif;
-    --fuenteBotones: 'Oswald', sans-serif;
-    --fuenteTexto: 'Montserrat', sans-serif;
-    --colorPrincipal: #FFFF;
-    --colorSecundario: #000;
-}
+@import "/css/basico.css";
 
 body {
     background-image: url(../imglanding/images.png);
@@ -112,42 +94,20 @@ h1 {
     cursor: pointer;
 }
 
+.boton a {
+    text-decoration: none;
+    color: var(--colorSecundario);
+}
+
 .boton--registro {
     color: var(--colorPrincipal);
     background-color: var(--colorSecundario);
     border: solid var(--colorPrincipal);
 }
 
-main
-
-.containerForm {
-    height: auto;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-
-.containerForm__login {
-    /* display: none; */
-    width: 40%;
-    height: auto;
-}
-
-fieldset {
-    padding: 20px;
-    border-radius: 10px;
-    border: 3px solid;
-    display: flex;
-    flex-direction: column;
-}
-
-legend {
-    text-align: center;
-    padding: 0 5%;
-}
-
-.containerForm__login--register{
-    display: none;
+.boton--registro a {
+    text-decoration: none;
+    color: var(--colorPrincipal);
 }
 
 @media (max-width: 768px) {
