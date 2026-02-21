@@ -1,22 +1,4 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-html {
-    font-size: 25px;
-}
-
-:root { 
-    --fuenteTitulos: 'Bebas Neue', sans-serif;
-    --fuenteSubtitulo: 'Oswald', sans-serif;
-    --fuenteBotones: 'Oswald', sans-serif;
-    --fuenteTexto: 'Montserrat', sans-serif;
-    --colorPrincipal: #FFFF;
-    --colorSecundario: #000;
-}
+@import "/css/basic.css";
 
 body {
     background-image: url(../imglanding/images.png);
@@ -26,13 +8,26 @@ body {
     background-attachment: fixed;
     background-color: rgba(0, 0, 0, 0.901);
     background-blend-mode: darken;
-    padding: 10px;
     color: var(--colorPrincipal);
 }
 
 header {
+    padding: 5% 0;
     height: 100vh;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.superior, .inferior {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+.superior {
+    height: 40%;
 }
 
 h1 {
@@ -65,27 +60,54 @@ h1 {
     transform: scale(1.1);
 }
 
-.nosotros {
-    font-size: 1.5rem;
-    font-family: var(--fuenteTexto);
+.inferior {
+    width: 60%;
+    height: 60%;
     display: flex;
-    flex-flow: column wrap;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    width: 70%;
-    height: 80%;
-    margin: auto;
+    font-family: var(--fuenteTexto);
+    gap: 15%;
+}
+
+.inferior__parrafo {
+    font-size: 1.5rem;
     text-align: center;
-    gap: 10%;
+}
+
+.botones {
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .boton {
-    padding: 10px 20px;
+    width: 40%;
+    padding: 10px 0;
     border-radius: 35px;
+    border: solid;
     font-size: 0.9rem;
     font-weight: bold;
     font-family: var(--fuenteBotones);
     cursor: pointer;
+}
+
+.boton a {
+    text-decoration: none;
+    color: var(--colorSecundario);
+}
+
+.boton--registro {
+    color: var(--colorPrincipal);
+    background-color: var(--colorSecundario);
+    border: solid var(--colorPrincipal);
+}
+
+.boton--registro a {
+    text-decoration: none;
+    color: var(--colorPrincipal);
 }
 
 @media (max-width: 768px) {
