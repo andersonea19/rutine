@@ -15,47 +15,52 @@ h1 {
     font-size: 3rem;
 }
 
-.contenedorIzquierda {
-    display: grid;
-    grid-template-rows: 0.3fr 0.7fr;
-    width: 100%;
+.contenedorDerecha {
     height: auto;
+    width: 100%;
     padding: 20px;
-    place-items: center;
+    display: grid;
+    grid-template-rows: 0.2fr 0.7fr 0.1fr;
     background-color: white;
+    place-items: center;
+    gap: 20px;
+}
+
+.contenedorIzquierda {
+    order: -1;
 }
 
 .containerForm {
-    height: 100%;
     width: 80%;
+    height: 100%;
     display: grid;
-    grid-template-rows: 0.6fr 0.4fr;
+    grid-template-rows: 0.8fr 0.2fr;
     place-items: center;
-}
-
-.datosLogueo {
-    height: auto;
-    width: 80%;
-    display: flex;
-    flex-direction: column;
-}
-
-.otrasOpciones {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    align-items: center;
     gap: 5%;
 }
 
-.otrasOpciones a {
-    color: var(--enlaces);
+.datosRegistro {
+    height: auto;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
 }
 
-.iniciarSesion {
-    width: 40%;
-    height: auto;
-    margin: 30px auto;
+.datosRegistro select {
+    border: none;
+    border-bottom: 1px solid var(--colorSecundario);
+    padding: 8px;
+    font-size: 0.7rem;
+}
+
+.datosRegistro select:focus {
+    border: none;
+    outline: none;
+    border-bottom: 2px solid var(--colorSecundario);
+}
+
+.registrarse {
+    width: 30%;
     padding: 10px 0;
     border-radius: 25px;
     background-color: transparent;
@@ -63,15 +68,19 @@ h1 {
     cursor: pointer;
 }
 
+.otrasOpciones a {
+    color: var(--enlaces);
+}
 
 label {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 }
 
 input {
-    padding: 10px;
+    padding: 8px;
+    margin-bottom: 1%;
     border: none;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid var(--colorSecundario);
     font-size: 0.7rem;
     width: 100%;
 }
